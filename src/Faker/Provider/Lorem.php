@@ -196,7 +196,7 @@ class Lorem extends Base
                 $word = ($size ? ' ' : '') . static::$type();
                 $text[] = $word;
 
-                $size += strlen($word);
+                $size += mb_strlen($word);
             }
 
             array_pop($text);
